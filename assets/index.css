@@ -1,0 +1,108 @@
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    vertical-align: baseline;
+    margin-top: -5.3vh;
+}
+
+.box h4{
+    padding-top: 48vh;
+    font-size: 4vh;
+}
+
+.box a{
+    text-decoration: none;
+    color: black;
+}
+
+.box i{
+    font-size: 72px;
+}
+
+#section1{
+    height: 100vh;
+    background: rgb(241, 92, 92);
+}
+
+#section2{
+    height: 100vh;
+    background: rgb(240, 240, 110);
+}
+
+#section3{
+    height: 100vh;
+    background: rgb(116, 219, 176);
+}
+
+#section1 i, #section2 i{
+animation-name: animation_down;
+animation-duration: 1.5s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+}
+
+#section3 i{
+    animation-name: animation_up;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in; 
+}
+
+
+@keyframes animation_down{
+    0% {
+        transform: translateY(3vh);
+        color: rgb(0, 0, 0);
+    }
+    25% {
+        transform: translateY(6vh);
+        color: rgb(30, 30, 30);
+    }
+    50% {
+        transform: translateY(9vh);
+        color: rgb(60, 60, 0);
+    }
+    75% {
+        transform: translateY(12vh);
+        color: rgb(90, 90, 90);
+    }
+    100% {
+        transform: translateY(15vh);
+        color: rgb(120, 120, 120);
+    }
+}
+
+@keyframes animation_up{
+    0% {
+        transform: translateY(15vh);
+        color: rgb(0, 0, 0);
+    }
+    25% {
+        transform: translateY(12vh);
+        color: rgb(30, 30, 30);
+    }
+    50% {
+        transform: translateY(9vh);
+        color: rgb(60, 60, 0);
+    }
+    75% {
+        transform: translateY(6vh);
+        color: rgb(90, 90, 90);
+    }
+    100% {
+        transform: translateY(3vh);
+        color: rgb(120, 120, 120);
+    }
+}
